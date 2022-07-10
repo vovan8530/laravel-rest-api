@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 # TODO: #### AUTH ####
 
 Route::post('/login', [AuthController::class, 'login'])->name('api-login');
-
 
 
 Route::middleware('auth:sanctum')->group(function () {
@@ -29,11 +29,6 @@ Route::middleware('auth:sanctum')->group(function () {
   Route::get('/logout', [AuthController::class, 'logout'])->name('api-logout');
 
   # TODO: #### AUTH ####
-
-  # TODO: #### PAGES ####
-
-
-  # TODO: #### PAGES ####
 
 });
 
