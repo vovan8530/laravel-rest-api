@@ -14,6 +14,7 @@ use Illuminate\Support\Carbon;
  * @property int $id
  * @property string $name
  * @property string $description
+ * @property integer $user_id
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
