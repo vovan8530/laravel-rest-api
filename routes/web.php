@@ -19,6 +19,10 @@ Route::get('/', function () {
   return redirect('login');
 });
 
+Route :: get ( '/phpinfo' , function() {
+    return  phpinfo ();
+});
+
 
 Route::group(['middleware' => 'auth'], function () {
 

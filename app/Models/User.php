@@ -74,4 +74,6 @@ class User extends Authenticatable {
   public function tags(): Relation {
     return $this->hasMany(Tag::class);
   }
+
+
 }
